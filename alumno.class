@@ -1,0 +1,27 @@
+public class alumno {
+ 
+    String nombre;
+    String apellidos;
+    String matricula;
+    int edad;
+ 
+    public alumno(String nombre, String apellidos, String matricula, int edad) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.matricula = matricula;
+        this.edad = edad;
+    }
+ 
+    public int getEdad() {
+        return edad;
+    }
+ 
+    @Override
+    public String toString() {
+        return "Nombre: " + nombre
+                + "\nApellidos: " + apellidos
+                + "\nmatricula: " + matricula
+                + "\nEdad: " + edad
+                + "\n------------------------------------------\n";
+    }
+ 
